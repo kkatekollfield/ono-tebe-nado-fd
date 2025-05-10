@@ -5,46 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="menu">
-        <div class="menu__list">
-          <div class="menu__item menu__item_active"><a href="" class="menu-link">главная</a></div>
-          <div class="menu__item"><a href="#0">посмотреть лоты</a></div>
-          <div class="menu__item"><a href="#0">об аукционе</a></div>
-        </div>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-list-item_no-bullit"><a class="header__link_active">главная</a></li>
+          <li class="header__links-list-item"><a href="#0" class="header__link">посмотреть лоты</a></li>
+          <li class="header__links-list-item"><a href="#0" class="header__link">об аукционе</a></li>
+        </ul>
       </nav>
-      <a href="" class="logo"></a>
-      <address class="address">
-        <p>+9 999 555 5555</p>
-        <p>info@sobaka.ge</p>
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      <a class="header__logo"><img src="./images/logo-black.svg" alt="Логотип" class="header__logo-image"></a>
+      <address class="address header__address">
+        <p><a href="tel:+99995555555">+9 999 555 5555</a><br>
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
       </address>
     </header>
     <main>
+      
       <section class="cover">
-        <h1>
-          <p>О<span>НО</span></p>
-          <p>ТЕ<span>БЕ</span></p>
-          <p>НА<span>ДО</span></p>
-        </h1>
-        <div class="description">
-          <p>Аукцион вещей, вкоторые никто не верил</p>
-          <div class="button">
+        <div class="overlay"></div>
+          <h1 class="cover__title">
+          <span class="aligned-text">
+            оно
+          </span>
+          <span class="aligned-text_center">
+            те<span class="letter-spacing-extended">бе</span>
+          </span>
+          <span class="aligned-text_right">
+            н<span class="letter-spacing-extended">ад</span><span class="no-letter-spacing">о</span>
+          </span>
+          </h1>
+          <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, вкоторые никто не верил</p>
+          <div class="bet-button">
             <p>Сделать ставку</p>
           </div>
-        </div>
+          </div>
       </section>
       <section class="lots">
         <h2>Лоты</h2>
-        <ul>
+        <ul class="lots__card-list">
           <li>
             <a>
-              <article class="card">
+              <article class="card image-card-lot-01 color">
+                <div class="overlay"></div>
                 <h4>Фильм режиссёра, который бросил киношколу</h4>
                 <div>
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
@@ -54,21 +65,23 @@
           </li>
           <li>
             <a>
-              <article class="card">
+              <article class="card image-card-lot-02">
+                <div class="overlay"></div>
                 <h4>Книга, где описан один скучный день из жизни рекламного агента</h4>
                 <div>
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                  </div>
+                </div>
               </article>
             </a>
           </li>
           <li>
             <a>
-              <article class="card">
+              <article class="card image-card-lot-03">
+                <div class="overlay"></div>
                 <h4>Картина, которую повторит даже 5-летний сын маминой подруги</h4>
                 <div>
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
-                  </div>
+                </div>
               </article>
             </a>
           </li>
@@ -101,11 +114,11 @@
           <div class="menu__item"><a href="#0">об аукционе</a></div>
         </div>
       </nav>
-      <ul>
-        <li><img></li>
-        <li><img></li>
-        <li><img></li>
-      </ul>
+      <div>
+        <a><img></a>
+        <a><img></a>
+        <a><img></a>
+      </div>
     </footer>
   </body>
 </html>
