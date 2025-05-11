@@ -2,6 +2,19 @@ body {
     background: rgba(255, 255, 255, 1);
   }
 
+  .header__links-list-item,
+  .address,
+  .cover__title,
+  .cover__description-text,
+  .bet-button-text,
+
+   {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 100%;
+  }
+
 h1 {
 
 }
@@ -32,7 +45,8 @@ a {
 }
 
 .header__menu {
-
+  width: 392px;
+  height: 22px;
 }
 
 .header__links-list {
@@ -41,7 +55,11 @@ a {
 }
 
 .header__links-list-item {
-  list-style: circle; 
+  list-style: circle;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit {
@@ -60,7 +78,7 @@ a {
   display: block;
   width: 148px;
   height: 105px;
-  padding: 1px 9px;
+  padding: 0 6px;
 }
 
 .header__logo-image {
@@ -76,14 +94,17 @@ a {
 .header__address {
   justify-self: end;
   max-width: 240px;
+  text-underline-offset: 4px;
+  line-height: 25px;
 }
+
 
 .cover {
   display: flex;
   flex-direction: column;
   position: relative;
   background-image: url(../images/cover.jpg);
-  background-size: cover;
+  background-size: 125% 100%;
   background-repeat: no-repeat;
   background-position: top;
   z-index: -1;
@@ -115,13 +136,13 @@ a {
   text-align: left;
   line-height: 115px;
   width: 1000px;
-  letter-spacing: 25px;
+  letter-spacing: 30px;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
-  line-height: 140px;
+  line-height: 160px;
   width: 1000px;
   letter-spacing: 25px;
 }
@@ -129,9 +150,9 @@ a {
 .aligned-text_right {
   display: block;
   text-align: right;
-  line-height: 115px;
+  line-height: 110px;
   width: 1000px;
-  letter-spacing: 25px;
+  letter-spacing: 17px;
 }
 
 .letter-spacing-extended {
@@ -144,15 +165,44 @@ a {
 
 .cover__description {
   display: flex;
+  justify-content: space-between;
   position: relative;
+  padding: 58px 50px 50px;
+  z-index: 1;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
-.cover__description-text {
 
+.cover__description-text {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 18px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  width: 637px;
+  height: 28px;
+  padding: 12px 0;
 }
 
 .bet-button {
+  display: block;
+}
 
+.bet-button-text {
+  font-family: Raleway, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: rgba(255, 255, 255, 1);
+  border: 1px solid;
+  padding: 12px 32px;
+  background-color: transparent;
 }
 
 .lots {
@@ -172,7 +222,6 @@ a {
 .image-card-lot-01 {  
   display: flex;
   position: relative;
-  background-image: url(../images/card-lot-01.jpg);
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
