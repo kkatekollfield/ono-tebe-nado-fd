@@ -236,7 +236,7 @@ body {
 }
 
 .card_type_film {
-  position: relative;  
+  position: relative;
   display: flex;
   background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
