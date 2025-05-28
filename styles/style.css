@@ -104,7 +104,7 @@
   display: block;
   width: 1000px;
   line-height: 160px;
-  letter-spacing: 45px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -112,7 +112,7 @@
   display: block;
   width: 1000px;
   line-height: 110px;
-  letter-spacing: 17px;
+  letter-spacing: 30px;
   text-align: right;
 }
 
